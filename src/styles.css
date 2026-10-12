@@ -1,19 +1,32 @@
-:root { font-family: Inter, "Microsoft YaHei", sans-serif; color: #1f2937; background: #f4f6f8; }
+/* 洛阳旅游管理端 — 全局样式 */
+
+:root {
+  font-family: Inter, "Microsoft YaHei", "PingFang SC", sans-serif;
+  color: #1f2937;
+  background: #f4f6f8;
+}
+
 * { box-sizing: border-box; }
-body { margin: 0; min-width: 320px; }
-.login-page { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: linear-gradient(135deg, #edf5ff, #f8fafc); }
-.login-card { width: min(420px, 100%); }
-.login-card h1 { margin: 0; font-size: 24px; }
-.muted { color: #64748b; }
-.form-alert { margin-bottom: 16px; }
-.full-width { width: 100%; }
-.admin-shell { min-height: 100vh; }
-.admin-aside { background: #132238; }
-.brand { color: white; font-size: 19px; font-weight: 600; padding: 20px 18px; }
-.admin-header { display: flex; align-items: center; justify-content: space-between; background: white; border-bottom: 1px solid #e5e7eb; }
-.admin-main { padding: 24px; }
-.stat-row, .welcome-card, .toolbar-card { margin-top: 20px; }
-.stat-label { color: #64748b; margin-bottom: 8px; }
-.stat-row strong { font-size: 26px; }
-.toolbar-card { margin-bottom: 16px; }
-@media (max-width: 640px) { .admin-aside { width: 170px !important; } .admin-main { padding: 16px; } }
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+/* Element Plus 微调 */
+.el-card { border-radius: 8px; }
+.el-button { font-weight: 500; }
+.el-page-header { margin-bottom: 4px; }
+
+/* 通用辅助 */
+.muted { color: #94a3b8; font-size: 13px; }
+.text-center { text-align: center; }
+.mt-16 { margin-top: 16px; }
+.mt-20 { margin-top: 20px; }
+.mb-16 { margin-bottom: 16px; }
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .admin-aside { width: 180px !important; }
+  .admin-main { padding: 16px !important; }
+}
